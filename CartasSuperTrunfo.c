@@ -40,7 +40,7 @@ int main() {
    scanf(" %s", cidade1);
 
    printf("digite a população:\n");
-   scanf("%d", &populacao1);
+   scanf("%lu", &populacao1);
 
    printf("digite a area (exemplo:1500.20 km²):\n");
    scanf("%f", &area1);
@@ -57,7 +57,7 @@ int main() {
 
    //Entrada de dados sobre as cartas
    printf("----------CARTA 2----------\n");
-   printf("Insira os dados da carta 01:\n");
+   printf("Insira os dados da carta 02:\n");
    printf("\n");
 
    printf("Digite uma letra de 'A' a 'H' para representar um estado:\n");
@@ -70,7 +70,7 @@ int main() {
    scanf(" %s", cidade2);
 
    printf("digite a população:\n");
-   scanf("%d", &populacao2);
+   scanf("%lu", &populacao2);
 
    printf("digite a area (exemplo:1500.20 km²):\n");
    scanf("%f", &area2);
@@ -88,8 +88,8 @@ int main() {
    printf("\n--- Dados da Carta 1 ---\n");
    printf("estado: %s\n", estado1);
    printf("código: %s\ncidade: %s\n", codigo1, cidade1);
-   printf("população: %d\narea: %.3f km²\n", populacao1, area1);
-   printf("PIB: %.3f Bilhões de reais\npontos turisticos: %d\n", PIB1, numero_de_pontos_turisticos1);
+   printf("população: %lu\narea: %.3f km²\n", populacao1, area1);
+   printf("PIB: %.2f Bilhões de reais\npontos turisticos: %d\n", PIB1, numero_de_pontos_turisticos1);
    printf("Densidade Populacional: %.2f hab/km²\n", densidade_populacional_carta2);
    printf("PIB Per Capita: %.2f reais\n", PIB_per_capta_carta2);
 
@@ -97,8 +97,8 @@ int main() {
    printf("\n--- Dados da Carta 2 ---\n");
    printf("estado: %s\n", estado2);
    printf("código: %s\ncidade: %s\n", codigo2, cidade2);
-   printf("população: %d\narea: %.3f km²\n", populacao2, area2);
-   printf("PIB: %.3f Bilhões de reais\npontos turisticos: %d\n", PIB2, numero_de_pontos_turisticos2);
+   printf("população: %lu\narea: %.3f km²\n", populacao2, area2);
+   printf("PIB: %.2f Bilhões de reais\npontos turisticos: %d\n", PIB2, numero_de_pontos_turisticos2);
    printf("Densidade Populacional: %.2f hab/km²\n", densidade_populacional_carta2);
    printf("PIB Per Capita: %.2f reais\n", PIB_per_capta_carta2);
 
