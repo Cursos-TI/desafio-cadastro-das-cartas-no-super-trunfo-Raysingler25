@@ -107,6 +107,8 @@ int main() {
    printf("Densidade Populacional: %.2f hab/km²\n", densidade_populacional_carta2);
    printf("PIB Per Capita: %.2f reais\n", PIB_per_capta_carta2);
 
+
+   /*  //ANTIGA LINHA DE CODIGO (ANTERIOR AO IF E ELSE)
     //Avalia qual carta venceu, para na hora da exibição nao mostrar o resultado do operador relacional bolean (0 ou 1) e sim carta 1 ou carta 2
     int resultado_populacao = (populacao1 > populacao2) + (populacao1 < populacao2) *2;
     int resultado_area = (area1 > area2) + (area1 < area2) *2;
@@ -115,6 +117,8 @@ int main() {
     int resultado_densidade_populacional = (densidade_populacional_carta1 > densidade_populacional_carta2) + (densidade_populacional_carta1 < densidade_populacional_carta2) *2;
     int resultado_pib_per_capta = (PIB_per_capta_carta1 > PIB_per_capta_carta2) + (PIB_per_capta_carta1 < PIB_per_capta_carta2) *2;
     int resultado_super_poder = (super_poder_carta1 > super_poder_carta2) + (super_poder_carta1 < super_poder_carta2) *2;
+   */
+
 
    //resultado do vencedor
    printf("\n");
@@ -122,6 +126,8 @@ int main() {
    printf("\n");
 
 
+   //Antiga e dasatualizada comparação da carta vencedora
+   /*
    printf("Comparação de Cartas:\n");
    printf("População: Carta %d venceu (%d)\n", resultado_populacao, populacao1 > populacao2);
    printf("Area: Carta %d venceu (%d)\n",resultado_area, area1 > area2);
@@ -130,8 +136,30 @@ int main() {
    printf("Densidade populacional %d venceu (%d)\n", resultado_densidade_populacional, densidade_populacional_carta1 < densidade_populacional_carta2);
    printf("PIB per capta carta %d venceu (%d)\n", resultado_pib_per_capta, PIB_per_capta_carta1 > PIB_per_capta_carta2);
    printf("Super poder carta %d venceu (%d)\n", resultado_super_poder, super_poder_carta1 > super_poder_carta2);
+   */
+
+   //Novo calculo da carta vencedora usando o if e else
+   if ( populacao1 > populacao2 ) { printf ("POPULAÇÃO - CARTA 1 VENCEU\n");
+   }else { printf ("POPULAÇÃO - CARTA 2 VENCEU\n"); }
+
+   if ( area1 > area2 ) { printf ("AREA - CARTA 1 VENCEU\n");
+   }else {  printf ("AREA - CARTA 2 VENCEU\n"); }
+
+   if (PIB1 > PIB2) {  printf ("PIB - CARTA 1 VENCEU\n");
+   }else { printf ("PIB - CARTA 2 VENCEU\n"); }
+
+   if (numero_de_pontos_turisticos1 > numero_de_pontos_turisticos2) { printf ("PONTOS TURISTICOS - CARTA 1 VENCEU\n"); 
+   }else { printf ("PONTOS TURISTICOS - CARTA 2 VENCEU\n");}
+
+   if (densidade_populacional_carta1 < densidade_populacional_carta2) { printf ("DENSIDADE POPULACIONAL - CARTA 1 VENCEU\n");
+   }else { printf ("DENSIDADE POPULACIONAL - CARTA 2 VENCEU\n");  }
+
+   if (PIB_per_capta_carta1 > PIB_per_capta_carta2) { printf ("PIB_PER_CAPTA - CARTA 1 VENCEU\n");
+   }else { printf ("PIB_PER_CAPTA - CARTA 2 VENCEU\n");  }
+
+   if (super_poder_carta1 > super_poder_carta2) { printf ("SUPER_PODER - CARTA 1 VENCEU\n");
+   }else { printf ("SUPER_PODER - CARTA 2 VENCEU\n"); }
 
    return 0;
-
 
 }
