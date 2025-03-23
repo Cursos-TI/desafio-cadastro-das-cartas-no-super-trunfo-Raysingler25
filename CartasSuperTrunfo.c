@@ -384,6 +384,7 @@ printf("\n");
             printf("obrigado por jogar");
             break;}
 
+//finalização
  case 02 : printf("jogo finalizado, obrigado por jogar.");
    break;
   default: printf("opção invalida, favor reiniciar o sistema\n");
